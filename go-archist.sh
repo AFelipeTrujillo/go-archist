@@ -1,12 +1,22 @@
 #!/bin/bash
 
+# Display ASCII Logo
+cat << 'EOF'
+                _     _     _   
+               | |   (_)   | |  
+  __ _ _ __ ___| |__  _ ___| |_ 
+ / _` | '__/ __| '_ \| / __| __|
+| (_| | | | (__| | | | \__ \ |_ 
+ \__,_|_|  \___|_| |_|_|___/\__|
+                                
+EOF
+
 # Default project name example
 DEFAULT_NAME="github.com/user/go-archist-project"
 
 # 1. Check if go.mod already exists
 if [ -f "go.mod" ]; then
     echo "Existing go.mod found. Skipping 'go mod init'..."
-    # Extract project name from existing go.mod
     PROJECT_NAME=$(grep "^module" go.mod | awk '{print $2}')
 else
     # 2. Ask for the module name with a GitHub-style example
@@ -23,7 +33,7 @@ fi
 
 echo "Creating Hexagonal Architecture folders..."
 
-# 3. Create directory tree
+# 3. Create directory tree (Hexagonal/Ports & Adapters)
 mkdir -p cmd/app
 mkdir -p internal/Application/{DTO,Service,UseCase}
 mkdir -p internal/Domain/{Entity,Exception,Repository,ValueObject}
@@ -44,4 +54,5 @@ func main() {
 EOF
 fi
 
+echo "----------------------------------------"
 echo "Architecture structure ready for: $PROJECT_NAME"
