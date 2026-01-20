@@ -42,11 +42,36 @@ The project follows a strict directory layout to prevent architectural erosion:
     └── Unit/               # Isolated business logic tests
 ```
 
-## Getting Started
+## Getting Started
 
 **Prerequisites**
 
 * Go 1.20 or higher
 
 * Bash environment (Linux, macOS, or WSL)
+
+**Using the Scaffolder**
+
+We provide a shell script to quickly initialize your project structure and Go module.
+
+1. **Grant execution permissions:**
+
+```bash
+chmod +x go-archist.sh
+```
+
+2. **Run the script:**
+
+```bash
+./go-archist.sh
+```
+
+The script will:
+
+* Display the project logo.
+* Detect if a go.mod already exists or prompt you to create one.
+* Generate the full Hexagonal Architecture folder tree.
+* Create a default main.go entry point.
+
+   
 
