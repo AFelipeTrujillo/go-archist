@@ -14,6 +14,7 @@ The goal of this project is to maintain a clean separation of concerns by ensuri
 ## Architectural Design: Hexagonal (Ports & Adapters)
 
 ![Texto alternativo](diagram.png)
+_source: wata.es_
 
 This project strictly follows the Hexagonal Architecture pattern to ensure high maintainability and testability:
 
