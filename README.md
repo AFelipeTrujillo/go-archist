@@ -1,5 +1,12 @@
 # Go-Archist
 
+![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)
+![Go](https://img.shields.io/badge/go-%3E%3D1.20-00ADD8.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Architecture](https://img.shields.io/badge/Architecture-Hexagonal-orange.svg)
+
 A lightweight tool and boilerplate for enforcing **Hexagonal Architecture** and architectural rules in Go projects, inspired by the philosophy of [php-archist](https://github.com/AFelipeTrujillo/php-archist).
 
 ## Philosophy
