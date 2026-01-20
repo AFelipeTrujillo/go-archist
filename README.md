@@ -43,6 +43,7 @@ The project follows a strict directory layout to prevent architectural erosion:
 ```
 
 ## Getting Started
+
 **Prerequisites**
 
 * Go 1.20 or higher
