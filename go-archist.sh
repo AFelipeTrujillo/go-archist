@@ -37,7 +37,7 @@ echo "Creating Hexagonal Architecture folders..."
 mkdir -p cmd/app
 mkdir -p internal/Application/{DTO,Service,UseCase}
 mkdir -p internal/Domain/{Entity,Exception,Repository,ValueObject}
-mkdir -p internal/Infrastructure/{Delivery/Console,Delivery/Http,ExternalApi,Persistence}
+mkdir -p internal/Infrastructure/{Delivery/Console,Delivery/Http,ExternalApi,Persistence,Config}
 mkdir -p internal/Shared
 mkdir -p tests/{Integration,Unit}
 
