@@ -61,6 +61,12 @@ The project follows a strict directory layout to prevent architectural erosion:
 
 We provide a shell script to quickly initialize your project structure and Go module.
 
+0. Using curl
+
+```bash
+curl -O https://raw.githubusercontent.com/AFelipeTrujillo/go-archist/refs/heads/main/go-archist.sh
+```
+
 1. **Grant execution permissions:**
 
 ```bash
